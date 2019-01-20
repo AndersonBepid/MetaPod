@@ -25,13 +25,13 @@ class HomePresenter: HomePresenterInput {
     func presentZuppers(response: HomeScene.FetchZuppers.Response) {
         let viewModel: HomeScene.FetchZuppers.ViewModel!
         switch response.result {
-        case .success(let owners):
-            let zuppersModel = owners.map { HomeScene
+        case .success(let zuppers):
+            let zuppersModel = zuppers.map { HomeScene
                 .FetchZuppers
                 .ViewModel
                 .ZupperModel(name: $0.name,
                              photo: $0.photo,
-                             type: $0.type)
+                             role: Role(rawValue: $0.role) ?? .roleDefault)
             }
             viewModel = HomeScene.FetchZuppers.ViewModel(result: .success(result: zuppersModel))
         case .failure(let err):

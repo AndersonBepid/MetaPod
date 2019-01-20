@@ -27,16 +27,15 @@ protocol HomeDataDestination {
 class HomeInteractor: HomeInteractorInput, HomeDataSource, HomeDataDestination {
     
     var output: HomeInteractorOutput?
-//    let provider: ZupperWorker
-    let provider: OwnerWorker
+    let provider: ZupperWorker
 
-    init(provider: OwnerWorker = OwnerWorker.singleton) {
+    init(provider: ZupperWorker = ZupperWorker.singleton) {
         self.provider = provider
     }
     // MARK: Business logic
 
     func fetchZuppers(request: HomeScene.FetchZuppers.Request) {
-        provider.search { (result) in
+        provider.fetchAll { (result) in
             let response = HomeScene.FetchZuppers.Response(result: result)
             self.output?.presentZuppers(response: response)
         }

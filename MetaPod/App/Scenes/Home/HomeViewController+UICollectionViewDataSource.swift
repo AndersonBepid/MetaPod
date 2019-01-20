@@ -16,10 +16,10 @@ extension HomeViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OwnerCollectionViewCell.cellIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeCollectionViewCell.cellIdentifier, for: indexPath)
         let zupper = zuppers[indexPath.item]
 
-        guard let homeCell = cell as? OwnerCollectionViewCell else {
+        guard let homeCell = cell as? HomeCollectionViewCell else {
             return UICollectionViewCell()
         }
 

@@ -18,12 +18,6 @@
 		71580CF921EE8E8600A40594 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CF321EE8E8600A40594 /* HomeInteractor.swift */; };
 		71580CFA21EE8E8600A40594 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CF421EE8E8600A40594 /* HomeConfigurator.swift */; };
 		71580CFC21EE8EFA00A40594 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71580CFB21EE8EFA00A40594 /* Home.storyboard */; };
-		7176C85B21F51A7A00E9786B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176C85A21F51A7A00E9786B /* Owner.swift */; };
-		7176C85D21F51AA100E9786B /* OwnerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176C85C21F51AA100E9786B /* OwnerAPI.swift */; };
-		7176C86021F51B0100E9786B /* OwnerWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176C85F21F51B0100E9786B /* OwnerWorker.swift */; };
-		7176C86421F51B7700E9786B /* OwnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176C86221F51B7600E9786B /* OwnerCollectionViewCell.swift */; };
-		7176C86521F51B7700E9786B /* OwnerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7176C86321F51B7700E9786B /* OwnerCollectionViewCell.xib */; };
-		7176C86721F51F7B00E9786B /* AppEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7176C86621F51F7B00E9786B /* AppEnviroment.swift */; };
 		7193B86521EF694C00C44874 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B86421EF694C00C44874 /* UIView+Shadow.swift */; };
 		7193B86C21EF82BD00C44874 /* Zupper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B86B21EF82BD00C44874 /* Zupper.swift */; };
 		7193B86E21EF8A3400C44874 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B86D21EF8A3400C44874 /* UIImageView+Download.swift */; };
@@ -71,12 +65,6 @@
 		71580CF321EE8E8600A40594 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		71580CF421EE8E8600A40594 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		71580CFB21EE8EFA00A40594 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		7176C85A21F51A7A00E9786B /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
-		7176C85C21F51AA100E9786B /* OwnerAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerAPI.swift; sourceTree = "<group>"; };
-		7176C85F21F51B0100E9786B /* OwnerWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerWorker.swift; sourceTree = "<group>"; };
-		7176C86221F51B7600E9786B /* OwnerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerCollectionViewCell.swift; sourceTree = "<group>"; };
-		7176C86321F51B7700E9786B /* OwnerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OwnerCollectionViewCell.xib; sourceTree = "<group>"; };
-		7176C86621F51F7B00E9786B /* AppEnviroment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnviroment.swift; sourceTree = "<group>"; };
 		7193B86421EF694C00C44874 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		7193B86B21EF82BD00C44874 /* Zupper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zupper.swift; sourceTree = "<group>"; };
 		7193B86D21EF8A3400C44874 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
@@ -179,7 +167,6 @@
 		71580CEE21EE8E6C00A40594 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7176C86121F51B5900E9786B /* OwnerCell */,
 				71B01F7721EE96C8007A190D /* HomeCollectionViewCell */,
 				71580CFB21EE8EFA00A40594 /* Home.storyboard */,
 				71580CF221EE8E8600A40594 /* HomeViewController.swift */,
@@ -194,29 +181,10 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		7176C85E21F51AAE00E9786B /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				7176C86621F51F7B00E9786B /* AppEnviroment.swift */,
-				7176C85C21F51AA100E9786B /* OwnerAPI.swift */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		7176C86121F51B5900E9786B /* OwnerCell */ = {
-			isa = PBXGroup;
-			children = (
-				7176C86321F51B7700E9786B /* OwnerCollectionViewCell.xib */,
-				7176C86221F51B7600E9786B /* OwnerCollectionViewCell.swift */,
-			);
-			path = OwnerCell;
-			sourceTree = "<group>";
-		};
 		7193B86621EF695800C44874 /* Library */ = {
 			isa = PBXGroup;
 			children = (
 				7193B86A21EF82AA00C44874 /* Models */,
-				7176C85E21F51AAE00E9786B /* Networking */,
 				7193B87421EF918600C44874 /* Helper */,
 				7193B86F21EF8F9600C44874 /* Worker */,
 				7193B86821EF697900C44874 /* Extension */,
@@ -260,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				7193B86B21EF82BD00C44874 /* Zupper.swift */,
-				7176C85A21F51A7A00E9786B /* Owner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,7 +235,6 @@
 		7193B86F21EF8F9600C44874 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
-				7176C85F21F51B0100E9786B /* OwnerWorker.swift */,
 				7193B87021EF8FF400C44874 /* ZupperWorker.swift */,
 			);
 			path = Worker;
@@ -411,7 +377,6 @@
 				7193B88121EFA1A400C44874 /* Roboto-Medium.ttf in Resources */,
 				7193B88921EFA1FC00C44874 /* NeueHaasGrotDisp-55Roman.otf in Resources */,
 				7193B88C21EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf in Resources */,
-				7176C86521F51B7700E9786B /* OwnerCollectionViewCell.xib in Resources */,
 				71580CE321EE8C6600A40594 /* LaunchScreen.storyboard in Resources */,
 				71CAF48321EFE3EE0073FF6D /* tabBar.storyboard in Resources */,
 				7193B88321EFA1AB00C44874 /* Roboto-Bold.ttf in Resources */,
@@ -508,12 +473,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7193B86C21EF82BD00C44874 /* Zupper.swift in Sources */,
-				7176C86021F51B0100E9786B /* OwnerWorker.swift in Sources */,
-				7176C85B21F51A7A00E9786B /* Owner.swift in Sources */,
 				71CAF49221EFE7270073FF6D /* RankingConfigurator.swift in Sources */,
 				71580CF821EE8E8600A40594 /* HomeViewController.swift in Sources */,
 				71580CF721EE8E8600A40594 /* HomeModels.swift in Sources */,
-				7176C86421F51B7700E9786B /* OwnerCollectionViewCell.swift in Sources */,
 				71580CD921EE8C6400A40594 /* AppDelegate.swift in Sources */,
 				7193B87121EF8FF400C44874 /* ZupperWorker.swift in Sources */,
 				71CAF48D21EFE7270073FF6D /* RankingPresenter.swift in Sources */,
@@ -523,7 +485,6 @@
 				71580CF921EE8E8600A40594 /* HomeInteractor.swift in Sources */,
 				71580CFA21EE8E8600A40594 /* HomeConfigurator.swift in Sources */,
 				71B01F7F21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift in Sources */,
-				7176C85D21F51AA100E9786B /* OwnerAPI.swift in Sources */,
 				71CAF48E21EFE7270073FF6D /* RankingRouter.swift in Sources */,
 				71B01F7D21EE9E99007A190D /* HomeCollectionViewCell.swift in Sources */,
 				7193B87621EF91A000C44874 /* InteractorResult.swift in Sources */,
@@ -533,7 +494,6 @@
 				71CAF49021EFE7270073FF6D /* RankingViewController.swift in Sources */,
 				7193B86E21EF8A3400C44874 /* UIImageView+Download.swift in Sources */,
 				71580CF521EE8E8600A40594 /* HomePresenter.swift in Sources */,
-				7176C86721F51F7B00E9786B /* AppEnviroment.swift in Sources */,
 				7193B88E21EFBE9000C44874 /* UIImage+Role.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

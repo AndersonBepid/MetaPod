@@ -12,6 +12,6 @@ import UIKit
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width - 32.0, height: 80.0)
+        return CGSize(width: view.frame.width - 32.0, height: 100.0)
     }
 }

@@ -30,13 +30,13 @@ extension HomeCollectionViewCell {
         layer.cornerRadius = 5
     }
 
-//    func fill(_ zupper: HomeScene.FetchZuppers.ViewModel.ZupperModel) {
-//        let urlImageString = zupper.photo
-//        nameLabel.text = zupper.name
-//        roleLabel.text = zupper.role.detail
-//        roleImageView.image = UIImage(role: zupper.role)
-//        profileImageView.loadImageUsingCache(withUrlString: urlImageString,
-//                                             defaultImage: #imageLiteral(resourceName: "profileDefault.png"),
-//                                             loadingActivityIndicatorStyle: .white)
-//    }
+    func fill(_ zupper: HomeScene.FetchZuppers.ViewModel.ZupperModel) {
+        let urlImageString = zupper.photo
+        nameLabel.text = zupper.name
+        roleLabel.text = zupper.role.detail
+        roleImageView.image = UIImage(role: zupper.role)
+        profileImageView.loadImageUsingCache(withUrlString: urlImageString,
+                                             defaultImage: #imageLiteral(resourceName: "profileDefault.png"),
+                                             loadingActivityIndicatorStyle: .white)
+    }
 }

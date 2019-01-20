@@ -19,7 +19,7 @@ struct HomeScene {
         }
         
         struct Response {
-            let result: InteractorResult<Owners>
+            let result: InteractorResult<Zuppers>
         }
         
         struct ViewModel {
@@ -30,7 +30,7 @@ struct HomeScene {
 
                 let name: String
                 let photo: String
-                let type: String
+                let role: Role
             }
 
             enum PresenterResult {

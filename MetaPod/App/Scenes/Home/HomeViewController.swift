@@ -75,8 +75,8 @@ class HomeViewController: UIViewController, HomeViewControllerInput {
 extension HomeViewController {
     
     private func registerCell() {
-        let repositoryCellNib = UINib(nibName: OwnerCollectionViewCell.cellIdentifier, bundle: nil)
-        collectionView.register(repositoryCellNib, forCellWithReuseIdentifier: OwnerCollectionViewCell.cellIdentifier)
+        let repositoryCellNib = UINib(nibName: HomeCollectionViewCell.cellIdentifier, bundle: nil)
+        collectionView.register(repositoryCellNib, forCellWithReuseIdentifier: HomeCollectionViewCell.cellIdentifier)
     }
 
     private func setupStyle() {
