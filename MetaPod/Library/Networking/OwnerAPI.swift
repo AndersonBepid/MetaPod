@@ -19,6 +19,13 @@ extension OwnerAPI {
         case .searchOwner: return "/users"
         }
     }
+
+    var httpMethod: String {
+        switch self {
+        case .searchOwner:
+            return "GET"
+        }
+    }
     
     var urlComponents: URLComponents? {
         return URLComponents(string: AppEnviroment.gitz.workspacesURL + path)

@@ -30,7 +30,7 @@ class OwnerCollectionViewCell: UICollectionViewCell {
 
 extension OwnerCollectionViewCell {
 
-    func fill(_ sender: HomeScene.FetchZuppers.ViewModel.ZupperModel) {
+    func fill(_ sender: HomeScene.FetchOwners.ViewModel.OwnerModel) {
         ownerImageView.loadImageUsingCache(withUrlString: sender.photo, defaultImage: #imageLiteral(resourceName: "github"), loadingActivityIndicatorStyle: .white)
         nameLabel.text = sender.name
         typeLabel.text = sender.type

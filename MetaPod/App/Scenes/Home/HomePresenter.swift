@@ -9,11 +9,11 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 
 protocol HomePresenterInput {
-    func presentZuppers(response: HomeScene.FetchZuppers.Response)
+    func presentOwners(response: HomeScene.FetchOwners.Response)
 }
 
 protocol HomePresenterOutput: class {
-    func displayZuppers(viewModel: HomeScene.FetchZuppers.ViewModel)
+    func displayOwners(viewModel: HomeScene.FetchOwners.ViewModel)
 }
 
 class HomePresenter: HomePresenterInput {
@@ -22,21 +22,21 @@ class HomePresenter: HomePresenterInput {
     
     // MARK: Presentation logic
 
-    func presentZuppers(response: HomeScene.FetchZuppers.Response) {
-        let viewModel: HomeScene.FetchZuppers.ViewModel!
+    func presentOwners(response: HomeScene.FetchOwners.Response) {
+        let viewModel: HomeScene.FetchOwners.ViewModel!
         switch response.result {
         case .success(let owners):
             let zuppersModel = owners.map { HomeScene
-                .FetchZuppers
+                .FetchOwners
                 .ViewModel
-                .ZupperModel(name: $0.name,
+                .OwnerModel(name: $0.name,
                              photo: $0.photo,
                              type: $0.type)
             }
-            viewModel = HomeScene.FetchZuppers.ViewModel(result: .success(result: zuppersModel))
+            viewModel = HomeScene.FetchOwners.ViewModel(result: .success(result: zuppersModel, owners: owners))
         case .failure(let err):
-            viewModel = HomeScene.FetchZuppers.ViewModel(result: .failure(errorMessege: err.localizedDescription))
+            viewModel = HomeScene.FetchOwners.ViewModel(result: .failure(errorMessege: err.localizedDescription))
         }
-        output?.displayZuppers(viewModel: viewModel)
+        output?.displayOwners(viewModel: viewModel)
     }
 }

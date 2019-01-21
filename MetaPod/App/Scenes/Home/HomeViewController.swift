@@ -12,21 +12,23 @@ import UIKit
 import Firebase
 
 protocol HomeViewControllerInput {
-    func displayZuppers(viewModel: HomeScene.FetchZuppers.ViewModel)
+    func displayOwners(viewModel: HomeScene.FetchOwners.ViewModel)
 }
 
 protocol HomeViewControllerOutput {
-    func fetchZuppers(request: HomeScene.FetchZuppers.Request)
+    func fetchOwners(request: HomeScene.FetchOwners.Request)
+    func selectOwner(request: HomeScene.SelectOwner.Request)
 }
 
 class HomeViewController: UIViewController, HomeViewControllerInput {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
+
     var output: HomeViewControllerOutput?
     var router: HomeRouter?
 
-    var zuppers: HomeScene.FetchZuppers.ViewModel.ZuppersModel = []
+    var owners: Owners = []
+    var ownersFormatted: HomeScene.FetchOwners.ViewModel.OwnersModel = []
 
     // MARK: Object lifecycle
     
@@ -45,22 +47,23 @@ class HomeViewController: UIViewController, HomeViewControllerInput {
         super.viewDidLoad()
         setupStyle()
         registerCell()
-        fetchZuppers()
+        fetchOwners()
     }
     
     // MARK: Requests
 
-    private func fetchZuppers() {
-        let request = HomeScene.FetchZuppers.Request()
-        output?.fetchZuppers(request: request)
+    private func fetchOwners() {
+        let request = HomeScene.FetchOwners.Request()
+        output?.fetchOwners(request: request)
     }
     
     // MARK: Display logic
 
-    func displayZuppers(viewModel: HomeScene.FetchZuppers.ViewModel) {
+    func displayOwners(viewModel: HomeScene.FetchOwners.ViewModel) {
         switch viewModel.result {
-        case .success(let zuppers):
-            self.zuppers = zuppers
+        case .success(let ownersFormatted, let owners):
+            self.owners = owners
+            self.ownersFormatted = ownersFormatted
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }

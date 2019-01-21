@@ -15,7 +15,7 @@ protocol HomeRouterInput {
 }
 
 protocol HomeRouterDataSource: class {
-    
+    var ownerSelected: Owner! { get }
 }
 
 protocol HomeRouterDataDestination: class {
@@ -23,11 +23,15 @@ protocol HomeRouterDataDestination: class {
 }
 
 class HomeRouter: HomeRouterInput {
-    
+
+    struct SegueIdentifier {
+        static let homeDetailSegue = "showHomeDetail"
+    }
+
     weak var viewController: HomeViewController!
     weak private var dataSource: HomeRouterDataSource!
     weak var dataDestination: HomeRouterDataDestination!
-    
+
     init(viewController: HomeViewController, dataSource: HomeRouterDataSource, dataDestination: HomeRouterDataDestination) {
         self.viewController = viewController
         self.dataSource = dataSource
@@ -35,11 +39,28 @@ class HomeRouter: HomeRouterInput {
     }
     
     // MARK: Navigation
+
+    func navigateToHomeDetailScene() {
+        viewController.performSegue(withIdentifier: SegueIdentifier.homeDetailSegue, sender: nil)
+    }
     
     // MARK: Communication
     
     func passDataToNextScene(for segue: UIStoryboardSegue) {
         // NOTE: Teach the router which scenes it can communicate with
-        
+        switch segue.identifier {
+        case SegueIdentifier.homeDetailSegue:
+            passToDataHomeDetailScene(segue)
+        default:
+            break
+        }
+    }
+}
+
+extension HomeRouter {
+
+    private func passToDataHomeDetailScene(_ segue: UIStoryboardSegue) {
+        guard let homeDetailViewController = segue.destination as? HomeDetailViewController else { return }
+        homeDetailViewController.router?.dataDestination.owner = dataSource.ownerSelected
     }
 }

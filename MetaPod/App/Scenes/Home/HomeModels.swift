@@ -12,21 +12,22 @@
 
 struct HomeScene {
 
-    struct FetchZuppers {
+    struct FetchOwners {
     
         struct Request {
             
         }
         
         struct Response {
+
             let result: InteractorResult<Owners>
         }
         
         struct ViewModel {
 
-            typealias ZuppersModel = [ZupperModel]
+            typealias OwnersModel = [OwnerModel]
 
-            struct ZupperModel {
+            struct OwnerModel {
 
                 let name: String
                 let photo: String
@@ -34,11 +35,27 @@ struct HomeScene {
             }
 
             enum PresenterResult {
-                case success(result: ZuppersModel)
+                case success(result: OwnersModel, owners: Owners)
                 case failure(errorMessege: String)
             }
 
             let result: PresenterResult
+        }
+    }
+
+    struct SelectOwner {
+        
+        struct Request {
+
+            let ownerSelected: Owner
+        }
+        
+        struct Response {
+
+        }
+        
+        struct ViewModel {
+
         }
     }
 }

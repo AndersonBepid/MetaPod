@@ -9,15 +9,16 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 
 protocol HomeInteractorInput {
-    func fetchZuppers(request: HomeScene.FetchZuppers.Request)
+    func fetchOwners(request: HomeScene.FetchOwners.Request)
+    func selectOwner(request: HomeScene.SelectOwner.Request)
 }
 
 protocol HomeInteractorOutput {
-    func presentZuppers(response: HomeScene.FetchZuppers.Response)
+    func presentOwners(response: HomeScene.FetchOwners.Response)
 }
 
 protocol HomeDataSource {
-    
+    var ownerSelected: Owner! { get }
 }
 
 protocol HomeDataDestination {
@@ -27,18 +28,22 @@ protocol HomeDataDestination {
 class HomeInteractor: HomeInteractorInput, HomeDataSource, HomeDataDestination {
     
     var output: HomeInteractorOutput?
-//    let provider: ZupperWorker
     let provider: OwnerWorker
+    var ownerSelected: Owner!
 
     init(provider: OwnerWorker = OwnerWorker.singleton) {
         self.provider = provider
     }
     // MARK: Business logic
 
-    func fetchZuppers(request: HomeScene.FetchZuppers.Request) {
+    func fetchOwners(request: HomeScene.FetchOwners.Request) {
         provider.search { (result) in
-            let response = HomeScene.FetchZuppers.Response(result: result)
-            self.output?.presentZuppers(response: response)
+            let response = HomeScene.FetchOwners.Response(result: result)
+            self.output?.presentOwners(response: response)
         }
+    }
+
+    func selectOwner(request: HomeScene.SelectOwner.Request) {
+        ownerSelected = request.ownerSelected
     }
 }

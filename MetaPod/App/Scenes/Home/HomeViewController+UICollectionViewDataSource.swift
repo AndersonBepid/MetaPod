@@ -12,12 +12,12 @@ import UIKit
 extension HomeViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return zuppers.count
+        return ownersFormatted.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OwnerCollectionViewCell.cellIdentifier, for: indexPath)
-        let zupper = zuppers[indexPath.item]
+        let zupper = ownersFormatted[indexPath.item]
 
         guard let homeCell = cell as? OwnerCollectionViewCell else {
             return UICollectionViewCell()

@@ -18,12 +18,20 @@ class OwnerWorker {
         let ownerAPI = OwnerAPI.searchOwner
         
         guard let urlComponents = ownerAPI.urlComponents else { return }
-        
         guard let url = urlComponents.url else { return }
-        let request = URLRequest(url: url)
+
+        var request = URLRequest(url: url)
+        request.httpMethod = ownerAPI.httpMethod
         
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else { return }
+            if error != nil {
+                completion(.failure(error! as NSError))
+                return
+            }
+            guard let data = data else {
+                completion(.success([]))
+                return
+            }
             do {
                 let owner = try JSONDecoder().decode(Owners.self, from: data)
                 completion(.success(owner))
