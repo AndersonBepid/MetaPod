@@ -8,20 +8,94 @@
 
 /* Begin PBXBuildFile section */
 		71580CD921EE8C6400A40594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CD821EE8C6400A40594 /* AppDelegate.swift */; };
-		71580CDB21EE8C6400A40594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CDA21EE8C6400A40594 /* ViewController.swift */; };
-		71580CDE21EE8C6400A40594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71580CDC21EE8C6400A40594 /* Main.storyboard */; };
 		71580CE021EE8C6600A40594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71580CDF21EE8C6600A40594 /* Assets.xcassets */; };
 		71580CE321EE8C6600A40594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71580CE121EE8C6600A40594 /* LaunchScreen.storyboard */; };
+		71580CEB21EE8CE700A40594 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71580CEA21EE8CE700A40594 /* GoogleService-Info.plist */; };
+		71580CF521EE8E8600A40594 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CEF21EE8E8600A40594 /* HomePresenter.swift */; };
+		71580CF621EE8E8600A40594 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CF021EE8E8600A40594 /* HomeRouter.swift */; };
+		71580CF721EE8E8600A40594 /* HomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CF121EE8E8600A40594 /* HomeModels.swift */; };
+		71580CF821EE8E8600A40594 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CF221EE8E8600A40594 /* HomeViewController.swift */; };
+		71580CF921EE8E8600A40594 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CF321EE8E8600A40594 /* HomeInteractor.swift */; };
+		71580CFA21EE8E8600A40594 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CF421EE8E8600A40594 /* HomeConfigurator.swift */; };
+		71580CFC21EE8EFA00A40594 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71580CFB21EE8EFA00A40594 /* Home.storyboard */; };
+		7193B86521EF694C00C44874 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B86421EF694C00C44874 /* UIView+Shadow.swift */; };
+		7193B86C21EF82BD00C44874 /* Zupper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B86B21EF82BD00C44874 /* Zupper.swift */; };
+		7193B86E21EF8A3400C44874 /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B86D21EF8A3400C44874 /* UIImageView+Download.swift */; };
+		7193B87121EF8FF400C44874 /* ZupperWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B87021EF8FF400C44874 /* ZupperWorker.swift */; };
+		7193B87621EF91A000C44874 /* InteractorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B87521EF91A000C44874 /* InteractorResult.swift */; };
+		7193B87F21EFA19E00C44874 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B87E21EFA19700C44874 /* Roboto-Thin.ttf */; };
+		7193B88021EFA1A100C44874 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B87B21EFA19400C44874 /* Roboto-Regular.ttf */; };
+		7193B88121EFA1A400C44874 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B87A21EFA19300C44874 /* Roboto-Medium.ttf */; };
+		7193B88221EFA1A800C44874 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B87D21EFA19600C44874 /* Roboto-Light.ttf */; };
+		7193B88321EFA1AB00C44874 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B87921EFA19100C44874 /* Roboto-Bold.ttf */; };
+		7193B88421EFA1AE00C44874 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B87C21EFA19500C44874 /* Roboto-Black.ttf */; };
+		7193B88921EFA1FC00C44874 /* NeueHaasGrotDisp-55Roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B88521EFA1F800C44874 /* NeueHaasGrotDisp-55Roman.otf */; };
+		7193B88A21EFA1FC00C44874 /* NeueHaasGrotDisp-45Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B88621EFA1F900C44874 /* NeueHaasGrotDisp-45Light.otf */; };
+		7193B88B21EFA1FC00C44874 /* NeueHaasGrotDisp-15XXThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B88721EFA1FB00C44874 /* NeueHaasGrotDisp-15XXThin.otf */; };
+		7193B88C21EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7193B88821EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf */; };
+		7193B88E21EFBE9000C44874 /* UIImage+Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7193B88D21EFBE9000C44874 /* UIImage+Role.swift */; };
+		71B01F7B21EE9E15007A190D /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B01F7A21EE9E15007A190D /* CircularView.swift */; };
+		71B01F7D21EE9E99007A190D /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B01F7C21EE9E99007A190D /* HomeCollectionViewCell.swift */; };
+		71B01F7F21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B01F7E21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift */; };
+		71B01F8121EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B01F8021EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift */; };
+		71B01F8321EEA73B007A190D /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71B01F8221EEA73B007A190D /* HomeCollectionViewCell.xib */; };
+		71CAF48321EFE3EE0073FF6D /* tabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CAF48221EFE3EE0073FF6D /* tabBar.storyboard */; };
+		71CAF48521EFE7050073FF6D /* Ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71CAF48421EFE7050073FF6D /* Ranking.storyboard */; };
+		71CAF48D21EFE7270073FF6D /* RankingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48721EFE7270073FF6D /* RankingPresenter.swift */; };
+		71CAF48E21EFE7270073FF6D /* RankingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48821EFE7270073FF6D /* RankingRouter.swift */; };
+		71CAF48F21EFE7270073FF6D /* RankingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48921EFE7270073FF6D /* RankingModels.swift */; };
+		71CAF49021EFE7270073FF6D /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48A21EFE7270073FF6D /* RankingViewController.swift */; };
+		71CAF49121EFE7270073FF6D /* RankingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48B21EFE7270073FF6D /* RankingInteractor.swift */; };
+		71CAF49221EFE7270073FF6D /* RankingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48C21EFE7270073FF6D /* RankingConfigurator.swift */; };
+		BB364AAA9E8CF44FE74370A0 /* Pods_MetaPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71580CD521EE8C6400A40594 /* MetaPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71580CD821EE8C6400A40594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71580CDA21EE8C6400A40594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		71580CDD21EE8C6400A40594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71580CDF21EE8C6600A40594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71580CE221EE8C6600A40594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71580CE421EE8C6600A40594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71580CEA21EE8CE700A40594 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		71580CEF21EE8E8600A40594 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		71580CF021EE8E8600A40594 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		71580CF121EE8E8600A40594 /* HomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModels.swift; sourceTree = "<group>"; };
+		71580CF221EE8E8600A40594 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		71580CF321EE8E8600A40594 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		71580CF421EE8E8600A40594 /* HomeConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
+		71580CFB21EE8EFA00A40594 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		7193B86421EF694C00C44874 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		7193B86B21EF82BD00C44874 /* Zupper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zupper.swift; sourceTree = "<group>"; };
+		7193B86D21EF8A3400C44874 /* UIImageView+Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
+		7193B87021EF8FF400C44874 /* ZupperWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZupperWorker.swift; sourceTree = "<group>"; };
+		7193B87521EF91A000C44874 /* InteractorResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorResult.swift; sourceTree = "<group>"; };
+		7193B87921EFA19100C44874 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		7193B87A21EFA19300C44874 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		7193B87B21EFA19400C44874 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		7193B87C21EFA19500C44874 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		7193B87D21EFA19600C44874 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		7193B87E21EFA19700C44874 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		7193B88521EFA1F800C44874 /* NeueHaasGrotDisp-55Roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueHaasGrotDisp-55Roman.otf"; sourceTree = "<group>"; };
+		7193B88621EFA1F900C44874 /* NeueHaasGrotDisp-45Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueHaasGrotDisp-45Light.otf"; sourceTree = "<group>"; };
+		7193B88721EFA1FB00C44874 /* NeueHaasGrotDisp-15XXThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueHaasGrotDisp-15XXThin.otf"; sourceTree = "<group>"; };
+		7193B88821EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueHaasGrotDisp-25XThin.otf"; sourceTree = "<group>"; };
+		7193B88D21EFBE9000C44874 /* UIImage+Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Role.swift"; sourceTree = "<group>"; };
+		71B01F7A21EE9E15007A190D /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		71B01F7C21EE9E99007A190D /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		71B01F7E21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		71B01F8021EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		71B01F8221EEA73B007A190D /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		71CAF48221EFE3EE0073FF6D /* tabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tabBar.storyboard; sourceTree = "<group>"; };
+		71CAF48421EFE7050073FF6D /* Ranking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ranking.storyboard; sourceTree = "<group>"; };
+		71CAF48721EFE7270073FF6D /* RankingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingPresenter.swift; sourceTree = "<group>"; };
+		71CAF48821EFE7270073FF6D /* RankingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingRouter.swift; sourceTree = "<group>"; };
+		71CAF48921EFE7270073FF6D /* RankingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingModels.swift; sourceTree = "<group>"; };
+		71CAF48A21EFE7270073FF6D /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		71CAF48B21EFE7270073FF6D /* RankingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingInteractor.swift; sourceTree = "<group>"; };
+		71CAF48C21EFE7270073FF6D /* RankingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingConfigurator.swift; sourceTree = "<group>"; };
+		B19CFAFB4F1F11427AEF14C6 /* Pods-MetaPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.release.xcconfig"; sourceTree = "<group>"; };
+		FBE959D21382A19CDFEEE5B3 /* Pods-MetaPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +103,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB364AAA9E8CF44FE74370A0 /* Pods_MetaPod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2BD2E29749C5CEE61419EDA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71580CCC21EE8C6400A40594 = {
 			isa = PBXGroup;
 			children = (
 				71580CD721EE8C6400A40594 /* MetaPod */,
 				71580CD621EE8C6400A40594 /* Products */,
+				BC85841BE17F0AD330AAE7AF /* Pods */,
+				2BD2E29749C5CEE61419EDA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +139,178 @@
 		71580CD721EE8C6400A40594 /* MetaPod */ = {
 			isa = PBXGroup;
 			children = (
-				71580CD821EE8C6400A40594 /* AppDelegate.swift */,
-				71580CDA21EE8C6400A40594 /* ViewController.swift */,
-				71580CDC21EE8C6400A40594 /* Main.storyboard */,
-				71580CDF21EE8C6600A40594 /* Assets.xcassets */,
-				71580CE121EE8C6600A40594 /* LaunchScreen.storyboard */,
-				71580CE421EE8C6600A40594 /* Info.plist */,
+				71580CEC21EE8DD400A40594 /* App */,
+				7193B86921EF698900C44874 /* Supporting Files */,
+				7193B86621EF695800C44874 /* Library */,
 			);
 			path = MetaPod;
+			sourceTree = "<group>";
+		};
+		71580CEC21EE8DD400A40594 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				71580CED21EE8DE500A40594 /* Scenes */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		71580CED21EE8DE500A40594 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				71580CEE21EE8E6C00A40594 /* Home */,
+				71CAF48621EFE70B0073FF6D /* Ranking */,
+				71CAF48021EFE3C40073FF6D /* Tab Bar */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		71580CEE21EE8E6C00A40594 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				71B01F7721EE96C8007A190D /* HomeCollectionViewCell */,
+				71580CFB21EE8EFA00A40594 /* Home.storyboard */,
+				71580CF221EE8E8600A40594 /* HomeViewController.swift */,
+				71B01F7E21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift */,
+				71B01F8021EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift */,
+				71580CEF21EE8E8600A40594 /* HomePresenter.swift */,
+				71580CF021EE8E8600A40594 /* HomeRouter.swift */,
+				71580CF121EE8E8600A40594 /* HomeModels.swift */,
+				71580CF321EE8E8600A40594 /* HomeInteractor.swift */,
+				71580CF421EE8E8600A40594 /* HomeConfigurator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7193B86621EF695800C44874 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7193B86A21EF82AA00C44874 /* Models */,
+				7193B87421EF918600C44874 /* Helper */,
+				7193B86F21EF8F9600C44874 /* Worker */,
+				7193B86821EF697900C44874 /* Extension */,
+				7193B86721EF696900C44874 /* Custom View */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		7193B86721EF696900C44874 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				71B01F7A21EE9E15007A190D /* CircularView.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		7193B86821EF697900C44874 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7193B86421EF694C00C44874 /* UIView+Shadow.swift */,
+				7193B86D21EF8A3400C44874 /* UIImageView+Download.swift */,
+				7193B88D21EFBE9000C44874 /* UIImage+Role.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7193B86921EF698900C44874 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7193B87721EFA17500C44874 /* Fonts */,
+				71580CEA21EE8CE700A40594 /* GoogleService-Info.plist */,
+				71580CE421EE8C6600A40594 /* Info.plist */,
+				71580CE121EE8C6600A40594 /* LaunchScreen.storyboard */,
+				71580CDF21EE8C6600A40594 /* Assets.xcassets */,
+				71580CD821EE8C6400A40594 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7193B86A21EF82AA00C44874 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7193B86B21EF82BD00C44874 /* Zupper.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7193B86F21EF8F9600C44874 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				7193B87021EF8FF400C44874 /* ZupperWorker.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		7193B87421EF918600C44874 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7193B87521EF91A000C44874 /* InteractorResult.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		7193B87721EFA17500C44874 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7193B87821EFA17D00C44874 /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7193B87821EFA17D00C44874 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				7193B87C21EFA19500C44874 /* Roboto-Black.ttf */,
+				7193B87921EFA19100C44874 /* Roboto-Bold.ttf */,
+				7193B87D21EFA19600C44874 /* Roboto-Light.ttf */,
+				7193B87A21EFA19300C44874 /* Roboto-Medium.ttf */,
+				7193B87B21EFA19400C44874 /* Roboto-Regular.ttf */,
+				7193B87E21EFA19700C44874 /* Roboto-Thin.ttf */,
+				7193B88721EFA1FB00C44874 /* NeueHaasGrotDisp-15XXThin.otf */,
+				7193B88821EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf */,
+				7193B88621EFA1F900C44874 /* NeueHaasGrotDisp-45Light.otf */,
+				7193B88521EFA1F800C44874 /* NeueHaasGrotDisp-55Roman.otf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		71B01F7721EE96C8007A190D /* HomeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				71B01F8221EEA73B007A190D /* HomeCollectionViewCell.xib */,
+				71B01F7C21EE9E99007A190D /* HomeCollectionViewCell.swift */,
+			);
+			path = HomeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		71CAF48021EFE3C40073FF6D /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				71CAF48221EFE3EE0073FF6D /* tabBar.storyboard */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		71CAF48621EFE70B0073FF6D /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				71CAF48421EFE7050073FF6D /* Ranking.storyboard */,
+				71CAF48A21EFE7270073FF6D /* RankingViewController.swift */,
+				71CAF48721EFE7270073FF6D /* RankingPresenter.swift */,
+				71CAF48821EFE7270073FF6D /* RankingRouter.swift */,
+				71CAF48921EFE7270073FF6D /* RankingModels.swift */,
+				71CAF48B21EFE7270073FF6D /* RankingInteractor.swift */,
+				71CAF48C21EFE7270073FF6D /* RankingConfigurator.swift */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		BC85841BE17F0AD330AAE7AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBE959D21382A19CDFEEE5B3 /* Pods-MetaPod.debug.xcconfig */,
+				B19CFAFB4F1F11427AEF14C6 /* Pods-MetaPod.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +320,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71580CE721EE8C6600A40594 /* Build configuration list for PBXNativeTarget "MetaPod" */;
 			buildPhases = (
+				ACFEA7EC0A6691D7A0FE466E /* [CP] Check Pods Manifest.lock */,
 				71580CD121EE8C6400A40594 /* Sources */,
 				71580CD221EE8C6400A40594 /* Frameworks */,
 				71580CD321EE8C6400A40594 /* Resources */,
+				833B0B95ABCC41B193D45DFF /* [CP] Embed Pods Frameworks */,
+				24902482B3D738B4CEDC52F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,35 +374,133 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7193B88121EFA1A400C44874 /* Roboto-Medium.ttf in Resources */,
+				7193B88921EFA1FC00C44874 /* NeueHaasGrotDisp-55Roman.otf in Resources */,
+				7193B88C21EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf in Resources */,
 				71580CE321EE8C6600A40594 /* LaunchScreen.storyboard in Resources */,
+				71CAF48321EFE3EE0073FF6D /* tabBar.storyboard in Resources */,
+				7193B88321EFA1AB00C44874 /* Roboto-Bold.ttf in Resources */,
+				7193B88021EFA1A100C44874 /* Roboto-Regular.ttf in Resources */,
+				71B01F8321EEA73B007A190D /* HomeCollectionViewCell.xib in Resources */,
+				7193B88A21EFA1FC00C44874 /* NeueHaasGrotDisp-45Light.otf in Resources */,
+				7193B88421EFA1AE00C44874 /* Roboto-Black.ttf in Resources */,
+				7193B88B21EFA1FC00C44874 /* NeueHaasGrotDisp-15XXThin.otf in Resources */,
+				7193B87F21EFA19E00C44874 /* Roboto-Thin.ttf in Resources */,
+				71580CEB21EE8CE700A40594 /* GoogleService-Info.plist in Resources */,
+				71CAF48521EFE7050073FF6D /* Ranking.storyboard in Resources */,
 				71580CE021EE8C6600A40594 /* Assets.xcassets in Resources */,
-				71580CDE21EE8C6400A40594 /* Main.storyboard in Resources */,
+				71580CFC21EE8EFA00A40594 /* Home.storyboard in Resources */,
+				7193B88221EFA1A800C44874 /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24902482B3D738B4CEDC52F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		833B0B95ABCC41B193D45DFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACFEA7EC0A6691D7A0FE466E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MetaPod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		71580CD121EE8C6400A40594 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71580CDB21EE8C6400A40594 /* ViewController.swift in Sources */,
+				7193B86C21EF82BD00C44874 /* Zupper.swift in Sources */,
+				71CAF49221EFE7270073FF6D /* RankingConfigurator.swift in Sources */,
+				71580CF821EE8E8600A40594 /* HomeViewController.swift in Sources */,
+				71580CF721EE8E8600A40594 /* HomeModels.swift in Sources */,
 				71580CD921EE8C6400A40594 /* AppDelegate.swift in Sources */,
+				7193B87121EF8FF400C44874 /* ZupperWorker.swift in Sources */,
+				71CAF48D21EFE7270073FF6D /* RankingPresenter.swift in Sources */,
+				71B01F8121EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
+				7193B86521EF694C00C44874 /* UIView+Shadow.swift in Sources */,
+				71CAF48F21EFE7270073FF6D /* RankingModels.swift in Sources */,
+				71580CF921EE8E8600A40594 /* HomeInteractor.swift in Sources */,
+				71580CFA21EE8E8600A40594 /* HomeConfigurator.swift in Sources */,
+				71B01F7F21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift in Sources */,
+				71CAF48E21EFE7270073FF6D /* RankingRouter.swift in Sources */,
+				71B01F7D21EE9E99007A190D /* HomeCollectionViewCell.swift in Sources */,
+				7193B87621EF91A000C44874 /* InteractorResult.swift in Sources */,
+				71B01F7B21EE9E15007A190D /* CircularView.swift in Sources */,
+				71580CF621EE8E8600A40594 /* HomeRouter.swift in Sources */,
+				71CAF49121EFE7270073FF6D /* RankingInteractor.swift in Sources */,
+				71CAF49021EFE7270073FF6D /* RankingViewController.swift in Sources */,
+				7193B86E21EF8A3400C44874 /* UIImageView+Download.swift in Sources */,
+				71580CF521EE8E8600A40594 /* HomePresenter.swift in Sources */,
+				7193B88E21EFBE9000C44874 /* UIImage+Role.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		71580CDC21EE8C6400A40594 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				71580CDD21EE8C6400A40594 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		71580CE121EE8C6600A40594 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,11 +630,13 @@
 		};
 		71580CE821EE8C6600A40594 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE959D21382A19CDFEEE5B3 /* Pods-MetaPod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2577FS5BXM;
-				INFOPLIST_FILE = MetaPod/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MetaPod/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +644,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.zup.MetaPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		71580CE921EE8C6600A40594 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19CFAFB4F1F11427AEF14C6 /* Pods-MetaPod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2577FS5BXM;
-				INFOPLIST_FILE = MetaPod/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MetaPod/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.zup.MetaPod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
