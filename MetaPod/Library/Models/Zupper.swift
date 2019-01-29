@@ -16,7 +16,7 @@ enum Role: String {
     case po
     case qa
     case scrumMaster
-    case trainee
+    case intern
     case head
     case architect
     case roleDefault
@@ -35,8 +35,8 @@ enum Role: String {
             return "Quality Assurance"
         case .scrumMaster:
             return "Scrum Master"
-        case .trainee:
-            return "Estagiário"
+        case .intern:
+            return "Intern"
         case .head:
             return "COO"
         case .architect:

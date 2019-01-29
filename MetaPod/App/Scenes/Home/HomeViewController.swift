@@ -21,6 +21,8 @@ protocol HomeViewControllerOutput {
 
 class HomeViewController: UIViewController, HomeViewControllerInput {
 
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var logoZupImageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var output: HomeViewControllerOutput?
@@ -43,9 +45,13 @@ class HomeViewController: UIViewController, HomeViewControllerInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupStyle()
         registerCell()
         fetchZuppers()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupStyle()
     }
     
     // MARK: Requests
@@ -80,7 +86,25 @@ extension HomeViewController {
     }
 
     private func setupStyle() {
+        guard let navBar = navigationController?.navigationBar else { return }
+        navBar.isHidden = true
+        logoZupImageView.dropShadow(color: UIColor.white.withAlphaComponent(0.3))
         collectionView.backgroundColor = .clear
+        headerView.layer.cornerRadius = 20
+        headerView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        headerView.dropShadow()
+        createGradientLayer()
+    }
+    
+    func createGradientLayer() {
+        let gradientLayer = CAGradientLayer()
+        
+        gradientLayer.frame = view.bounds
+        gradientLayer.colors = [#colorLiteral(red: 0.2928162217, green: 0.3328040242, blue: 0.3703248203, alpha: 1).cgColor, #colorLiteral(red: 0.1045968458, green: 0.1450966299, blue: 0.1536100507, alpha: 1).cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        
+        view.layer.insertSublayer(gradientLayer, below: collectionView.layer)
     }
 }
 
