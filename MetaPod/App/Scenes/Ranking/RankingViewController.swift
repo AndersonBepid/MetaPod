@@ -11,17 +11,20 @@
 import UIKit
 
 protocol RankingViewControllerInput {
-    
+    func displayRanking(viewModel: RankingScene.FetchAll.ViewModel)
 }
 
 protocol RankingViewControllerOutput {
-    
+    func fetchRanking(request: RankingScene.FetchAll.Request)
 }
 
 class RankingViewController: UIViewController, RankingViewControllerInput {
+
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var output: RankingViewControllerOutput?
     var router: RankingRouter?
+    var zuppersRaking: RankingScene.FetchAll.ViewModel.ZuppersModel = []
     
     // MARK: Object lifecycle
     
@@ -34,6 +37,9 @@ class RankingViewController: UIViewController, RankingViewControllerInput {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupStyle()
+        registerCell()
+        fetchAll()
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -41,10 +47,42 @@ class RankingViewController: UIViewController, RankingViewControllerInput {
     }
     
     // MARK: Requests
-    
+
+    private func fetchAll() {
+        let request = RankingScene.FetchAll.Request()
+        output?.fetchRanking(request: request)
+    }
     
     // MARK: Display logic
     
+    func displayRanking(viewModel: RankingScene.FetchAll.ViewModel) {
+        switch viewModel.result {
+        case .success(let zuppers):
+            zuppersRaking = zuppers
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        case .failure(let errorMessege):
+            print(errorMessege)
+        }
+    }
+}
+
+extension RankingViewController {
+
+    private func registerCell() {
+        let rankingCellNib = UINib(nibName: RankingCollectionViewCell.identifierCell, bundle: nil)
+        collectionView.register(rankingCellNib, forCellWithReuseIdentifier: RankingCollectionViewCell.identifierCell)
+    }
+}
+
+// MARK: Style
+
+extension RankingViewController {
+
+    private func setupStyle() {
+        collectionView.backgroundColor = .clear
+    }
 }
 
 //This should be on configurator but for some reason storyboard doesn't detect ViewController's name if placed there

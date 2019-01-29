@@ -47,6 +47,10 @@
 		71CAF49021EFE7270073FF6D /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48A21EFE7270073FF6D /* RankingViewController.swift */; };
 		71CAF49121EFE7270073FF6D /* RankingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48B21EFE7270073FF6D /* RankingInteractor.swift */; };
 		71CAF49221EFE7270073FF6D /* RankingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71CAF48C21EFE7270073FF6D /* RankingConfigurator.swift */; };
+		A01DDB0121FEC4A400B5CAF3 /* RankingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01DDB0021FEC4A400B5CAF3 /* RankingCollectionViewCell.xib */; };
+		A01DDB0321FECD7800B5CAF3 /* RankingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DDB0221FECD7800B5CAF3 /* RankingCollectionViewCell.swift */; };
+		A01DDB0521FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DDB0421FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift */; };
+		A01DDB0721FECE2F00B5CAF3 /* RankingViewController+UICollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DDB0621FECE2E00B5CAF3 /* RankingViewController+UICollectionDelegate.swift */; };
 		BB364AAA9E8CF44FE74370A0 /* Pods_MetaPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +98,10 @@
 		71CAF48A21EFE7270073FF6D /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		71CAF48B21EFE7270073FF6D /* RankingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingInteractor.swift; sourceTree = "<group>"; };
 		71CAF48C21EFE7270073FF6D /* RankingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingConfigurator.swift; sourceTree = "<group>"; };
+		A01DDB0021FEC4A400B5CAF3 /* RankingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingCollectionViewCell.xib; sourceTree = "<group>"; };
+		A01DDB0221FECD7800B5CAF3 /* RankingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A01DDB0421FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RankingViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		A01DDB0621FECE2E00B5CAF3 /* RankingViewController+UICollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RankingViewController+UICollectionDelegate.swift"; sourceTree = "<group>"; };
 		B19CFAFB4F1F11427AEF14C6 /* Pods-MetaPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.release.xcconfig"; sourceTree = "<group>"; };
 		FBE959D21382A19CDFEEE5B3 /* Pods-MetaPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,10 +180,10 @@
 				71580CF221EE8E8600A40594 /* HomeViewController.swift */,
 				71B01F7E21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift */,
 				71B01F8021EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift */,
+				71580CF321EE8E8600A40594 /* HomeInteractor.swift */,
 				71580CEF21EE8E8600A40594 /* HomePresenter.swift */,
 				71580CF021EE8E8600A40594 /* HomeRouter.swift */,
 				71580CF121EE8E8600A40594 /* HomeModels.swift */,
-				71580CF321EE8E8600A40594 /* HomeInteractor.swift */,
 				71580CF421EE8E8600A40594 /* HomeConfigurator.swift */,
 			);
 			path = Home;
@@ -293,15 +301,27 @@
 		71CAF48621EFE70B0073FF6D /* Ranking */ = {
 			isa = PBXGroup;
 			children = (
+				A01DDAFF21FEC46300B5CAF3 /* RankingCollectionViewCell */,
 				71CAF48421EFE7050073FF6D /* Ranking.storyboard */,
 				71CAF48A21EFE7270073FF6D /* RankingViewController.swift */,
+				A01DDB0421FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift */,
+				A01DDB0621FECE2E00B5CAF3 /* RankingViewController+UICollectionDelegate.swift */,
+				71CAF48B21EFE7270073FF6D /* RankingInteractor.swift */,
 				71CAF48721EFE7270073FF6D /* RankingPresenter.swift */,
 				71CAF48821EFE7270073FF6D /* RankingRouter.swift */,
 				71CAF48921EFE7270073FF6D /* RankingModels.swift */,
-				71CAF48B21EFE7270073FF6D /* RankingInteractor.swift */,
 				71CAF48C21EFE7270073FF6D /* RankingConfigurator.swift */,
 			);
 			path = Ranking;
+			sourceTree = "<group>";
+		};
+		A01DDAFF21FEC46300B5CAF3 /* RankingCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A01DDB0021FEC4A400B5CAF3 /* RankingCollectionViewCell.xib */,
+				A01DDB0221FECD7800B5CAF3 /* RankingCollectionViewCell.swift */,
+			);
+			path = RankingCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		BC85841BE17F0AD330AAE7AF /* Pods */ = {
@@ -383,6 +403,7 @@
 				7193B88021EFA1A100C44874 /* Roboto-Regular.ttf in Resources */,
 				71B01F8321EEA73B007A190D /* HomeCollectionViewCell.xib in Resources */,
 				7193B88A21EFA1FC00C44874 /* NeueHaasGrotDisp-45Light.otf in Resources */,
+				A01DDB0121FEC4A400B5CAF3 /* RankingCollectionViewCell.xib in Resources */,
 				7193B88421EFA1AE00C44874 /* Roboto-Black.ttf in Resources */,
 				7193B88B21EFA1FC00C44874 /* NeueHaasGrotDisp-15XXThin.otf in Resources */,
 				7193B87F21EFA19E00C44874 /* Roboto-Thin.ttf in Resources */,
@@ -482,7 +503,9 @@
 				71B01F8121EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
 				7193B86521EF694C00C44874 /* UIView+Shadow.swift in Sources */,
 				71CAF48F21EFE7270073FF6D /* RankingModels.swift in Sources */,
+				A01DDB0721FECE2F00B5CAF3 /* RankingViewController+UICollectionDelegate.swift in Sources */,
 				71580CF921EE8E8600A40594 /* HomeInteractor.swift in Sources */,
+				A01DDB0321FECD7800B5CAF3 /* RankingCollectionViewCell.swift in Sources */,
 				71580CFA21EE8E8600A40594 /* HomeConfigurator.swift in Sources */,
 				71B01F7F21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift in Sources */,
 				71CAF48E21EFE7270073FF6D /* RankingRouter.swift in Sources */,
@@ -492,6 +515,7 @@
 				71580CF621EE8E8600A40594 /* HomeRouter.swift in Sources */,
 				71CAF49121EFE7270073FF6D /* RankingInteractor.swift in Sources */,
 				71CAF49021EFE7270073FF6D /* RankingViewController.swift in Sources */,
+				A01DDB0521FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift in Sources */,
 				7193B86E21EF8A3400C44874 /* UIImageView+Download.swift in Sources */,
 				71580CF521EE8E8600A40594 /* HomePresenter.swift in Sources */,
 				7193B88E21EFBE9000C44874 /* UIImage+Role.swift in Sources */,

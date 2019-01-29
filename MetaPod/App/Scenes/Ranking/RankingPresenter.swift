@@ -9,11 +9,11 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 
 protocol RankingPresenterInput {
-    
+    func presentRanking(response: RankingScene.FetchAll.Response)
 }
 
 protocol RankingPresenterOutput: class {
-    
+    func displayRanking(viewModel: RankingScene.FetchAll.ViewModel)
 }
 
 class RankingPresenter: RankingPresenterInput {
@@ -21,5 +21,29 @@ class RankingPresenter: RankingPresenterInput {
     weak var output: RankingPresenterOutput?
     
     // MARK: Presentation logic
+
+    func presentRanking(response: RankingScene.FetchAll.Response) {
+        let viewModel: RankingScene.FetchAll.ViewModel!
+        switch response.result {
+        case .success(let zuppers):
+            let zuppersModel = formattedValues(zuppers: zuppers)
+            viewModel = RankingScene.FetchAll.ViewModel(result: .success(result: zuppersModel))
+        case .failure(let err):
+            viewModel = RankingScene.FetchAll.ViewModel(result: .failure(errorMessege: err.localizedDescription))
+        }
+        output?.displayRanking(viewModel: viewModel)
+    }
+}
+
+extension RankingPresenter {
     
+    private func formattedValues(zuppers: Zuppers) -> RankingScene.FetchAll.ViewModel.ZuppersModel {
+        let zuppersModel = zuppers.map { RankingScene
+            .FetchAll
+            .ViewModel
+            .ZupperModel(name: $0.firstName,
+                         photo: $0.photo)
+        }
+        return zuppersModel
+    }
 }

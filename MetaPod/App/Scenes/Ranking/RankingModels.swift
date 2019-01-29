@@ -11,5 +11,34 @@
 //  Type "usecase" for some magic!
 
 struct RankingScene {
-    
+
+    struct FetchAll {
+        
+        struct Request {
+            
+        }
+        
+        struct Response {
+
+            let result: InteractorResult<Zuppers>
+        }
+        
+        struct ViewModel {
+
+            typealias ZuppersModel = [ZupperModel]
+
+            struct ZupperModel {
+                
+                let name: String
+                let photo: String
+            }
+            
+            enum PresenterResult {
+                case success(result: ZuppersModel)
+                case failure(errorMessege: String)
+            }
+            
+            let result: PresenterResult
+        }
+    }
 }

@@ -72,7 +72,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.20377495884895325" green="0.19862005114555359" blue="0.2649005651473999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.20000000000000001" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Mfc-B0-VJ1" firstAttribute="leading" secondItem="2oT-Vl-WLm" secondAttribute="trailing" constant="16" id="1cz-p7-r1J"/>
                             <constraint firstItem="Mfc-B0-VJ1" firstAttribute="height" secondItem="Hpe-wE-Uep" secondAttribute="height" id="4zS-wF-cMi"/>

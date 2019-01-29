@@ -26,17 +26,25 @@ class HomePresenter: HomePresenterInput {
         let viewModel: HomeScene.FetchZuppers.ViewModel!
         switch response.result {
         case .success(let zuppers):
-            let zuppersModel = zuppers.map { HomeScene
-                .FetchZuppers
-                .ViewModel
-                .ZupperModel(name: $0.name,
-                             photo: $0.photo,
-                             role: Role(rawValue: $0.role) ?? .roleDefault)
-            }
+            let zuppersModel = formattedValues(zuppers: zuppers)
             viewModel = HomeScene.FetchZuppers.ViewModel(result: .success(result: zuppersModel))
         case .failure(let err):
             viewModel = HomeScene.FetchZuppers.ViewModel(result: .failure(errorMessege: err.localizedDescription))
         }
         output?.displayZuppers(viewModel: viewModel)
+    }
+}
+
+extension HomePresenter {
+
+    private func formattedValues(zuppers: Zuppers) -> HomeScene.FetchZuppers.ViewModel.ZuppersModel {
+        let zuppersModel = zuppers.map { HomeScene
+            .FetchZuppers
+            .ViewModel
+            .ZupperModel(name: $0.name,
+                         photo: $0.photo,
+                         role: Role(rawValue: $0.role) ?? .roleDefault)
+        }
+        return zuppersModel
     }
 }

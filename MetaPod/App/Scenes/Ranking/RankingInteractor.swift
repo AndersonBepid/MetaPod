@@ -9,11 +9,11 @@
 //  https://github.com/HelmMobile/clean-swift-templates
 
 protocol RankingInteractorInput {
-    
+    func fetchRanking(request: RankingScene.FetchAll.Request)
 }
 
 protocol RankingInteractorOutput {
-    
+    func presentRanking(response: RankingScene.FetchAll.Response)
 }
 
 protocol RankingDataSource {
@@ -27,8 +27,17 @@ protocol RankingDataDestination {
 class RankingInteractor: RankingInteractorInput, RankingDataSource, RankingDataDestination {
     
     var output: RankingInteractorOutput?
+    let provider: ZupperWorker
     
+    init(provider: ZupperWorker = ZupperWorker.singleton) {
+        self.provider = provider
+    }
     // MARK: Business logic
     
-
+    func fetchRanking(request: RankingScene.FetchAll.Request) {
+        provider.fetchAll { (result) in
+            let response = RankingScene.FetchAll.Response(result: result)
+            self.output?.presentRanking(response: response)
+        }
+    }
 }

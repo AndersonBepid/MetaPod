@@ -55,7 +55,9 @@
         <scene sceneID="F5a-ai-pAN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZGv-zR-4Ze" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Zuppers" image="home" selectedImage="homeFilled" id="yK1-L7-u2x"/>
+                    <tabBarItem key="tabBarItem" title="Zuppers" image="home" selectedImage="homeFilled" id="yK1-L7-u2x">
+                        <color key="badgeColor" red="0.86783081289999997" green="0.65836197139999997" blue="0.2658621967" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" largeTitles="YES" id="DFr-o2-Yuo">
@@ -75,6 +77,6 @@
     </scenes>
     <resources>
         <image name="home" width="31.5" height="31.5"/>
-        <image name="homeFilled" width="177.88235473632812" height="177.88235473632812"/>
+        <image name="homeFilled" width="31.5" height="31.5"/>
     </resources>
 </document>

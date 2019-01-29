@@ -50,13 +50,17 @@ enum Role: String {
 struct Zupper: Decodable {
 
     static let identifier = "zuppers"
+    let firstName: String
+    let lastName: String
     let name: String
     let photo: String
     let role: String
 
     init(_ data: [String: Any]) {
-        name = data["name"] as? String ?? ""
+        firstName = data["firstName"] as? String ?? ""
+        lastName = data["lastName"] as? String ?? ""
         photo = data["photo"] as? String ?? ""
         role = data["role"] as? String ?? ""
+        name = firstName + " " + lastName
     }
 }
