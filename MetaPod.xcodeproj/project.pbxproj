@@ -51,6 +51,18 @@
 		A01DDB0321FECD7800B5CAF3 /* RankingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DDB0221FECD7800B5CAF3 /* RankingCollectionViewCell.swift */; };
 		A01DDB0521FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DDB0421FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift */; };
 		A01DDB0721FECE2F00B5CAF3 /* RankingViewController+UICollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01DDB0621FECE2E00B5CAF3 /* RankingViewController+UICollectionDelegate.swift */; };
+		A0AAF08B221124C80057A1F8 /* MetricsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF085221124C80057A1F8 /* MetricsDetailPresenter.swift */; };
+		A0AAF08C221124C80057A1F8 /* MetricsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF086221124C80057A1F8 /* MetricsDetailRouter.swift */; };
+		A0AAF08D221124C80057A1F8 /* MetricsDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF087221124C80057A1F8 /* MetricsDetailModels.swift */; };
+		A0AAF08E221124C80057A1F8 /* MetricsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF088221124C80057A1F8 /* MetricsDetailViewController.swift */; };
+		A0AAF08F221124C80057A1F8 /* MetricsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF089221124C80057A1F8 /* MetricsDetailInteractor.swift */; };
+		A0AAF090221124C80057A1F8 /* MetricsDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF08A221124C80057A1F8 /* MetricsDetailConfigurator.swift */; };
+		A0AAF092221125090057A1F8 /* MetricsDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0AAF091221125090057A1F8 /* MetricsDetail.storyboard */; };
+		A0AAF094221125F90057A1F8 /* MetricsDetailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0AAF093221125F90057A1F8 /* MetricsDetailCollectionViewCell.xib */; };
+		A0AAF096221131120057A1F8 /* MetricsDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF095221131120057A1F8 /* MetricsDetailCollectionViewCell.swift */; };
+		A0AAF0982211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF0972211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift */; };
+		A0AAF09A221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF099221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift */; };
+		A0AAF09F22114E5B0057A1F8 /* MetricsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF09E22114E5B0057A1F8 /* MetricsSummaryView.swift */; };
 		BB364AAA9E8CF44FE74370A0 /* Pods_MetaPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +114,18 @@
 		A01DDB0221FECD7800B5CAF3 /* RankingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A01DDB0421FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RankingViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		A01DDB0621FECE2E00B5CAF3 /* RankingViewController+UICollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RankingViewController+UICollectionDelegate.swift"; sourceTree = "<group>"; };
+		A0AAF085221124C80057A1F8 /* MetricsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailPresenter.swift; sourceTree = "<group>"; };
+		A0AAF086221124C80057A1F8 /* MetricsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailRouter.swift; sourceTree = "<group>"; };
+		A0AAF087221124C80057A1F8 /* MetricsDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailModels.swift; sourceTree = "<group>"; };
+		A0AAF088221124C80057A1F8 /* MetricsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailViewController.swift; sourceTree = "<group>"; };
+		A0AAF089221124C80057A1F8 /* MetricsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailInteractor.swift; sourceTree = "<group>"; };
+		A0AAF08A221124C80057A1F8 /* MetricsDetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailConfigurator.swift; sourceTree = "<group>"; };
+		A0AAF091221125090057A1F8 /* MetricsDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MetricsDetail.storyboard; sourceTree = "<group>"; };
+		A0AAF093221125F90057A1F8 /* MetricsDetailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MetricsDetailCollectionViewCell.xib; sourceTree = "<group>"; };
+		A0AAF095221131120057A1F8 /* MetricsDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		A0AAF0972211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetricsDetailViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		A0AAF099221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetricsDetailViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		A0AAF09E22114E5B0057A1F8 /* MetricsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryView.swift; sourceTree = "<group>"; };
 		B19CFAFB4F1F11427AEF14C6 /* Pods-MetaPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.release.xcconfig"; sourceTree = "<group>"; };
 		FBE959D21382A19CDFEEE5B3 /* Pods-MetaPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +189,7 @@
 		71580CED21EE8DE500A40594 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A0608D2722111FD00087486E /* MetricsDetail */,
 				71580CEE21EE8E6C00A40594 /* Home */,
 				71CAF48621EFE70B0073FF6D /* Ranking */,
 				71CAF48021EFE3C40073FF6D /* Tab Bar */,
@@ -324,6 +349,33 @@
 			path = RankingCollectionViewCell;
 			sourceTree = "<group>";
 		};
+		A0608D2722111FD00087486E /* MetricsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A0608D2822111FEC0087486E /* MetricsDetailCollectionViewCell */,
+				A0AAF091221125090057A1F8 /* MetricsDetail.storyboard */,
+				A0AAF088221124C80057A1F8 /* MetricsDetailViewController.swift */,
+				A0AAF0972211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift */,
+				A0AAF099221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift */,
+				A0AAF089221124C80057A1F8 /* MetricsDetailInteractor.swift */,
+				A0AAF085221124C80057A1F8 /* MetricsDetailPresenter.swift */,
+				A0AAF086221124C80057A1F8 /* MetricsDetailRouter.swift */,
+				A0AAF087221124C80057A1F8 /* MetricsDetailModels.swift */,
+				A0AAF08A221124C80057A1F8 /* MetricsDetailConfigurator.swift */,
+				A0AAF09E22114E5B0057A1F8 /* MetricsSummaryView.swift */,
+			);
+			path = MetricsDetail;
+			sourceTree = "<group>";
+		};
+		A0608D2822111FEC0087486E /* MetricsDetailCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A0AAF093221125F90057A1F8 /* MetricsDetailCollectionViewCell.xib */,
+				A0AAF095221131120057A1F8 /* MetricsDetailCollectionViewCell.swift */,
+			);
+			path = MetricsDetailCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		BC85841BE17F0AD330AAE7AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7193B88121EFA1A400C44874 /* Roboto-Medium.ttf in Resources */,
+				A0AAF092221125090057A1F8 /* MetricsDetail.storyboard in Resources */,
 				7193B88921EFA1FC00C44874 /* NeueHaasGrotDisp-55Roman.otf in Resources */,
 				7193B88C21EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf in Resources */,
 				71580CE321EE8C6600A40594 /* LaunchScreen.storyboard in Resources */,
@@ -410,6 +463,7 @@
 				71580CEB21EE8CE700A40594 /* GoogleService-Info.plist in Resources */,
 				71CAF48521EFE7050073FF6D /* Ranking.storyboard in Resources */,
 				71580CE021EE8C6600A40594 /* Assets.xcassets in Resources */,
+				A0AAF094221125F90057A1F8 /* MetricsDetailCollectionViewCell.xib in Resources */,
 				71580CFC21EE8EFA00A40594 /* Home.storyboard in Resources */,
 				7193B88221EFA1A800C44874 /* Roboto-Light.ttf in Resources */,
 			);
@@ -494,8 +548,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7193B86C21EF82BD00C44874 /* Zupper.swift in Sources */,
+				A0AAF08E221124C80057A1F8 /* MetricsDetailViewController.swift in Sources */,
 				71CAF49221EFE7270073FF6D /* RankingConfigurator.swift in Sources */,
 				71580CF821EE8E8600A40594 /* HomeViewController.swift in Sources */,
+				A0AAF09F22114E5B0057A1F8 /* MetricsSummaryView.swift in Sources */,
+				A0AAF08C221124C80057A1F8 /* MetricsDetailRouter.swift in Sources */,
 				71580CF721EE8E8600A40594 /* HomeModels.swift in Sources */,
 				71580CD921EE8C6400A40594 /* AppDelegate.swift in Sources */,
 				7193B87121EF8FF400C44874 /* ZupperWorker.swift in Sources */,
@@ -504,20 +561,27 @@
 				7193B86521EF694C00C44874 /* UIView+Shadow.swift in Sources */,
 				71CAF48F21EFE7270073FF6D /* RankingModels.swift in Sources */,
 				A01DDB0721FECE2F00B5CAF3 /* RankingViewController+UICollectionDelegate.swift in Sources */,
+				A0AAF08F221124C80057A1F8 /* MetricsDetailInteractor.swift in Sources */,
+				A0AAF09A221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift in Sources */,
 				71580CF921EE8E8600A40594 /* HomeInteractor.swift in Sources */,
 				A01DDB0321FECD7800B5CAF3 /* RankingCollectionViewCell.swift in Sources */,
 				71580CFA21EE8E8600A40594 /* HomeConfigurator.swift in Sources */,
+				A0AAF096221131120057A1F8 /* MetricsDetailCollectionViewCell.swift in Sources */,
 				71B01F7F21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift in Sources */,
 				71CAF48E21EFE7270073FF6D /* RankingRouter.swift in Sources */,
 				71B01F7D21EE9E99007A190D /* HomeCollectionViewCell.swift in Sources */,
+				A0AAF0982211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift in Sources */,
 				7193B87621EF91A000C44874 /* InteractorResult.swift in Sources */,
 				71B01F7B21EE9E15007A190D /* CircularView.swift in Sources */,
 				71580CF621EE8E8600A40594 /* HomeRouter.swift in Sources */,
+				A0AAF090221124C80057A1F8 /* MetricsDetailConfigurator.swift in Sources */,
 				71CAF49121EFE7270073FF6D /* RankingInteractor.swift in Sources */,
+				A0AAF08D221124C80057A1F8 /* MetricsDetailModels.swift in Sources */,
 				71CAF49021EFE7270073FF6D /* RankingViewController.swift in Sources */,
 				A01DDB0521FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift in Sources */,
 				7193B86E21EF8A3400C44874 /* UIImageView+Download.swift in Sources */,
 				71580CF521EE8E8600A40594 /* HomePresenter.swift in Sources */,
+				A0AAF08B221124C80057A1F8 /* MetricsDetailPresenter.swift in Sources */,
 				7193B88E21EFBE9000C44874 /* UIImage+Role.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -665,7 +729,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.zup.MetaPod;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.zup.Metapod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -685,7 +749,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.zup.MetaPod;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.zup.Metapod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
