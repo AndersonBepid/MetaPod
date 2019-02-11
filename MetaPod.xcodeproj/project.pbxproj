@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714ADDE4221202FF002D1006 /* MetricsSummary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714ADDE3221202FF002D1006 /* MetricsSummary.storyboard */; };
+		714ADDEB2212043C002D1006 /* MetricsSummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ADDE52212043C002D1006 /* MetricsSummaryPresenter.swift */; };
+		714ADDEC2212043C002D1006 /* MetricsSummaryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ADDE62212043C002D1006 /* MetricsSummaryRouter.swift */; };
+		714ADDED2212043C002D1006 /* MetricsSummaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ADDE72212043C002D1006 /* MetricsSummaryModels.swift */; };
+		714ADDEE2212043C002D1006 /* MetricsSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ADDE82212043C002D1006 /* MetricsSummaryViewController.swift */; };
+		714ADDEF2212043C002D1006 /* MetricsSummaryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ADDE92212043C002D1006 /* MetricsSummaryInteractor.swift */; };
+		714ADDF02212043C002D1006 /* MetricsSummaryConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714ADDEA2212043C002D1006 /* MetricsSummaryConfigurator.swift */; };
 		71580CD921EE8C6400A40594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71580CD821EE8C6400A40594 /* AppDelegate.swift */; };
 		71580CE021EE8C6600A40594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71580CDF21EE8C6600A40594 /* Assets.xcassets */; };
 		71580CE321EE8C6600A40594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71580CE121EE8C6600A40594 /* LaunchScreen.storyboard */; };
@@ -62,12 +69,18 @@
 		A0AAF096221131120057A1F8 /* MetricsDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF095221131120057A1F8 /* MetricsDetailCollectionViewCell.swift */; };
 		A0AAF0982211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF0972211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift */; };
 		A0AAF09A221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF099221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift */; };
-		A0AAF09F22114E5B0057A1F8 /* MetricsSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AAF09E22114E5B0057A1F8 /* MetricsSummaryView.swift */; };
 		BB364AAA9E8CF44FE74370A0 /* Pods_MetaPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MetaPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		714ADDE3221202FF002D1006 /* MetricsSummary.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MetricsSummary.storyboard; sourceTree = "<group>"; };
+		714ADDE52212043C002D1006 /* MetricsSummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryPresenter.swift; sourceTree = "<group>"; };
+		714ADDE62212043C002D1006 /* MetricsSummaryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryRouter.swift; sourceTree = "<group>"; };
+		714ADDE72212043C002D1006 /* MetricsSummaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryModels.swift; sourceTree = "<group>"; };
+		714ADDE82212043C002D1006 /* MetricsSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryViewController.swift; sourceTree = "<group>"; };
+		714ADDE92212043C002D1006 /* MetricsSummaryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryInteractor.swift; sourceTree = "<group>"; };
+		714ADDEA2212043C002D1006 /* MetricsSummaryConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryConfigurator.swift; sourceTree = "<group>"; };
 		71580CD521EE8C6400A40594 /* MetaPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71580CD821EE8C6400A40594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71580CDF21EE8C6600A40594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,7 +138,6 @@
 		A0AAF095221131120057A1F8 /* MetricsDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		A0AAF0972211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetricsDetailViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 		A0AAF099221134B40057A1F8 /* MetricsDetailViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetricsDetailViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
-		A0AAF09E22114E5B0057A1F8 /* MetricsSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsSummaryView.swift; sourceTree = "<group>"; };
 		B19CFAFB4F1F11427AEF14C6 /* Pods-MetaPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.release.xcconfig"; sourceTree = "<group>"; };
 		FBE959D21382A19CDFEEE5B3 /* Pods-MetaPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MetaPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MetaPod/Pods-MetaPod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +160,20 @@
 				12AAC5D5C51838236C6AC8AB /* Pods_MetaPod.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		714ADDE2221202C2002D1006 /* Metrics Summary */ = {
+			isa = PBXGroup;
+			children = (
+				714ADDE3221202FF002D1006 /* MetricsSummary.storyboard */,
+				714ADDE82212043C002D1006 /* MetricsSummaryViewController.swift */,
+				714ADDE92212043C002D1006 /* MetricsSummaryInteractor.swift */,
+				714ADDE52212043C002D1006 /* MetricsSummaryPresenter.swift */,
+				714ADDE62212043C002D1006 /* MetricsSummaryRouter.swift */,
+				714ADDE72212043C002D1006 /* MetricsSummaryModels.swift */,
+				714ADDEA2212043C002D1006 /* MetricsSummaryConfigurator.swift */,
+			);
+			path = "Metrics Summary";
 			sourceTree = "<group>";
 		};
 		71580CCC21EE8C6400A40594 = {
@@ -189,7 +215,8 @@
 		71580CED21EE8DE500A40594 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				A0608D2722111FD00087486E /* MetricsDetail */,
+				714ADDE2221202C2002D1006 /* Metrics Summary */,
+				A0608D2722111FD00087486E /* Metrics Detail */,
 				71580CEE21EE8E6C00A40594 /* Home */,
 				71CAF48621EFE70B0073FF6D /* Ranking */,
 				71CAF48021EFE3C40073FF6D /* Tab Bar */,
@@ -349,7 +376,7 @@
 			path = RankingCollectionViewCell;
 			sourceTree = "<group>";
 		};
-		A0608D2722111FD00087486E /* MetricsDetail */ = {
+		A0608D2722111FD00087486E /* Metrics Detail */ = {
 			isa = PBXGroup;
 			children = (
 				A0608D2822111FEC0087486E /* MetricsDetailCollectionViewCell */,
@@ -362,9 +389,8 @@
 				A0AAF086221124C80057A1F8 /* MetricsDetailRouter.swift */,
 				A0AAF087221124C80057A1F8 /* MetricsDetailModels.swift */,
 				A0AAF08A221124C80057A1F8 /* MetricsDetailConfigurator.swift */,
-				A0AAF09E22114E5B0057A1F8 /* MetricsSummaryView.swift */,
 			);
-			path = MetricsDetail;
+			path = "Metrics Detail";
 			sourceTree = "<group>";
 		};
 		A0608D2822111FEC0087486E /* MetricsDetailCollectionViewCell */ = {
@@ -447,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7193B88121EFA1A400C44874 /* Roboto-Medium.ttf in Resources */,
+				714ADDE4221202FF002D1006 /* MetricsSummary.storyboard in Resources */,
 				A0AAF092221125090057A1F8 /* MetricsDetail.storyboard in Resources */,
 				7193B88921EFA1FC00C44874 /* NeueHaasGrotDisp-55Roman.otf in Resources */,
 				7193B88C21EFA1FC00C44874 /* NeueHaasGrotDisp-25XThin.otf in Resources */,
@@ -500,6 +527,7 @@
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
@@ -511,6 +539,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
@@ -551,10 +580,13 @@
 				A0AAF08E221124C80057A1F8 /* MetricsDetailViewController.swift in Sources */,
 				71CAF49221EFE7270073FF6D /* RankingConfigurator.swift in Sources */,
 				71580CF821EE8E8600A40594 /* HomeViewController.swift in Sources */,
-				A0AAF09F22114E5B0057A1F8 /* MetricsSummaryView.swift in Sources */,
 				A0AAF08C221124C80057A1F8 /* MetricsDetailRouter.swift in Sources */,
+				714ADDEB2212043C002D1006 /* MetricsSummaryPresenter.swift in Sources */,
 				71580CF721EE8E8600A40594 /* HomeModels.swift in Sources */,
+				714ADDEE2212043C002D1006 /* MetricsSummaryViewController.swift in Sources */,
 				71580CD921EE8C6400A40594 /* AppDelegate.swift in Sources */,
+				714ADDEF2212043C002D1006 /* MetricsSummaryInteractor.swift in Sources */,
+				714ADDED2212043C002D1006 /* MetricsSummaryModels.swift in Sources */,
 				7193B87121EF8FF400C44874 /* ZupperWorker.swift in Sources */,
 				71CAF48D21EFE7270073FF6D /* RankingPresenter.swift in Sources */,
 				71B01F8121EEA1B6007A190D /* HomeViewController+UICollectionViewDelegate.swift in Sources */,
@@ -568,6 +600,7 @@
 				71580CFA21EE8E8600A40594 /* HomeConfigurator.swift in Sources */,
 				A0AAF096221131120057A1F8 /* MetricsDetailCollectionViewCell.swift in Sources */,
 				71B01F7F21EEA19B007A190D /* HomeViewController+UICollectionViewDataSource.swift in Sources */,
+				714ADDF02212043C002D1006 /* MetricsSummaryConfigurator.swift in Sources */,
 				71CAF48E21EFE7270073FF6D /* RankingRouter.swift in Sources */,
 				71B01F7D21EE9E99007A190D /* HomeCollectionViewCell.swift in Sources */,
 				A0AAF0982211347B0057A1F8 /* MetricsDetailViewController+UICollectionViewDataSource.swift in Sources */,
@@ -580,6 +613,7 @@
 				71CAF49021EFE7270073FF6D /* RankingViewController.swift in Sources */,
 				A01DDB0521FECDFE00B5CAF3 /* RankingViewController+UICollectionViewDataSource.swift in Sources */,
 				7193B86E21EF8A3400C44874 /* UIImageView+Download.swift in Sources */,
+				714ADDEC2212043C002D1006 /* MetricsSummaryRouter.swift in Sources */,
 				71580CF521EE8E8600A40594 /* HomePresenter.swift in Sources */,
 				A0AAF08B221124C80057A1F8 /* MetricsDetailPresenter.swift in Sources */,
 				7193B88E21EFBE9000C44874 /* UIImage+Role.swift in Sources */,

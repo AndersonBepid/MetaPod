@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MVR-Jr-sXo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Metrics Summary View Controller-->
+        <scene sceneID="xFW-Th-HfH">
+            <objects>
+                <viewController id="MVR-Jr-sXo" customClass="MetricsSummaryViewController" customModule="MetaPod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HhG-CO-DRo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INe-BK-Aqa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="D5c-HW-tw9" kind="embed" id="DcY-01-qig"/>
+                                </connections>
+                            </containerView>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPl-H3-mtP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NwU-vR-QW5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rjs-Mv-EzZ" customClass="MBCircularProgressBarView">
+                                            <rect key="frame" x="71" y="201" width="233" height="233"/>
+                                            <subviews>
+                                                <activityIndicatorView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aLz-bA-RHS">
+                                                    <rect key="frame" x="98" y="98" width="37" height="37"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Rjs-Mv-EzZ" secondAttribute="height" id="PhC-VQ-BvD"/>
+                                                <constraint firstItem="aLz-bA-RHS" firstAttribute="centerX" secondItem="Rjs-Mv-EzZ" secondAttribute="centerX" id="QEk-bX-xke"/>
+                                                <constraint firstItem="aLz-bA-RHS" firstAttribute="centerY" secondItem="Rjs-Mv-EzZ" secondAttribute="centerY" id="vcp-Rb-shQ"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="showValueString" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="progressColor">
+                                                    <color key="value" red="0.63137254899999995" green="0.72941176470000002" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                                    <real key="value" value="100"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="progressStrokeColor">
+                                                    <color key="value" red="0.63137254899999995" green="0.72941176470000002" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="progressAngle">
+                                                    <real key="value" value="100"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="decimalPlaces">
+                                                    <integer key="value" value="2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="centerX" secondItem="NwU-vR-QW5" secondAttribute="centerX" id="2NG-DM-abc"/>
+                                        <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="centerY" secondItem="NwU-vR-QW5" secondAttribute="centerY" constant="-16" id="Rbk-fC-ImM"/>
+                                        <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="height" secondItem="NwU-vR-QW5" secondAttribute="height" multiplier="0.35" id="ovQ-FH-5Gc"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tPl-H3-mtP" firstAttribute="leading" secondItem="AUw-a8-A2M" secondAttribute="leading" id="1ov-pz-BKX"/>
+                            <constraint firstItem="AUw-a8-A2M" firstAttribute="bottom" secondItem="INe-BK-Aqa" secondAttribute="bottom" id="4sD-ce-UZe"/>
+                            <constraint firstItem="INe-BK-Aqa" firstAttribute="top" secondItem="HhG-CO-DRo" secondAttribute="top" id="6Gc-m2-HHL"/>
+                            <constraint firstItem="tPl-H3-mtP" firstAttribute="top" secondItem="HhG-CO-DRo" secondAttribute="top" id="Qf1-Rj-D5G"/>
+                            <constraint firstItem="tPl-H3-mtP" firstAttribute="bottom" secondItem="AUw-a8-A2M" secondAttribute="bottom" id="aJI-7I-t2D"/>
+                            <constraint firstItem="AUw-a8-A2M" firstAttribute="trailing" secondItem="INe-BK-Aqa" secondAttribute="trailing" id="fik-wH-VEv"/>
+                            <constraint firstItem="tPl-H3-mtP" firstAttribute="trailing" secondItem="AUw-a8-A2M" secondAttribute="trailing" id="gXl-dc-JAG"/>
+                            <constraint firstItem="INe-BK-Aqa" firstAttribute="leading" secondItem="AUw-a8-A2M" secondAttribute="leading" id="nHB-dk-XOe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AUw-a8-A2M"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="aLz-bA-RHS" id="kVz-fo-3Ch"/>
+                        <outlet property="circularProgress" destination="Rjs-Mv-EzZ" id="Xni-JB-JqX"/>
+                        <outlet property="visualEffectView" destination="tPl-H3-mtP" id="vc2-Lz-tlw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRQ-QV-CWN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="204" y="151.57421289355324"/>
+        </scene>
+        <!--MetricsDetail-->
+        <scene sceneID="jpf-dz-7kM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MetricsDetail" id="D5c-HW-tw9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YUx-CC-CUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="151"/>
+        </scene>
+    </scenes>
+</document>

@@ -11,5 +11,6 @@ target 'MetaPod' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod "MBCircularProgressBar"
 
 end

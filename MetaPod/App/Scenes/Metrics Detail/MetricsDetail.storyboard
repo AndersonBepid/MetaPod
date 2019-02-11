@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cnb-TO-Wzr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Metrics Detail View Controller-->
+        <scene sceneID="dUi-DA-kdq">
+            <objects>
+                <viewController id="cnb-TO-Wzr" customClass="MetricsDetailViewController" customModule="MetaPod" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5L6-sb-5Dh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iLF-L5-Lwc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.148845166" green="0.1481048465" blue="0.19368654490000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dJt-xp-moY">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="cnb-TO-Wzr" id="x7t-Iv-NdN"/>
+                                    <outlet property="delegate" destination="cnb-TO-Wzr" id="dsi-Op-R5o"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11748389154672623" green="0.12136540561914444" blue="0.13381612300872803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="5Aq-JG-1GU" firstAttribute="bottom" secondItem="iLF-L5-Lwc" secondAttribute="bottom" id="3AM-OA-e3x"/>
+                            <constraint firstItem="iLF-L5-Lwc" firstAttribute="leading" secondItem="5Aq-JG-1GU" secondAttribute="leading" id="GC6-ti-glm"/>
+                            <constraint firstItem="5Aq-JG-1GU" firstAttribute="trailing" secondItem="iLF-L5-Lwc" secondAttribute="trailing" id="Uzg-9j-O5W"/>
+                            <constraint firstItem="iLF-L5-Lwc" firstAttribute="top" secondItem="5L6-sb-5Dh" secondAttribute="top" id="eW5-yz-j35"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5Aq-JG-1GU"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="iLF-L5-Lwc" id="yAU-S8-BKE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NZA-x7-Rz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="173.16341829085459"/>
+        </scene>
+    </scenes>
+</document>
