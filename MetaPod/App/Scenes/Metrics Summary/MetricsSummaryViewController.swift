@@ -61,8 +61,8 @@ class MetricsSummaryViewController: UIViewController, MetricsSummaryViewControll
                 self.circularProgress.unitString = "%"
                 self.circularProgress.value = 22.82
                 self.visualEffectView.frame.size.height = self.view.frame.height * 0.3
-                self.circularProgress.layoutIfNeeded()
             })
+            self.view.layoutIfNeeded()
         }
     }
     

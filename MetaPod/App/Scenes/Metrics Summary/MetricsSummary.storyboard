@@ -31,16 +31,15 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rjs-Mv-EzZ" customClass="MBCircularProgressBarView">
-                                            <rect key="frame" x="71" y="201" width="233" height="233"/>
+                                            <rect key="frame" x="71" y="217" width="233" height="233"/>
                                             <subviews>
-                                                <activityIndicatorView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aLz-bA-RHS">
+                                                <activityIndicatorView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="aLz-bA-RHS">
                                                     <rect key="frame" x="98" y="98" width="37" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </activityIndicatorView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="Rjs-Mv-EzZ" secondAttribute="height" id="PhC-VQ-BvD"/>
-                                                <constraint firstItem="aLz-bA-RHS" firstAttribute="centerX" secondItem="Rjs-Mv-EzZ" secondAttribute="centerX" id="QEk-bX-xke"/>
-                                                <constraint firstItem="aLz-bA-RHS" firstAttribute="centerY" secondItem="Rjs-Mv-EzZ" secondAttribute="centerY" id="vcp-Rb-shQ"/>
+                                                <constraint firstAttribute="width" secondItem="Rjs-Mv-EzZ" secondAttribute="height" multiplier="1:1" id="2JD-zk-Uyv"/>
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="showValueString" value="YES"/>
@@ -65,12 +64,12 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
-                                    <constraints>
-                                        <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="centerX" secondItem="NwU-vR-QW5" secondAttribute="centerX" id="2NG-DM-abc"/>
-                                        <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="centerY" secondItem="NwU-vR-QW5" secondAttribute="centerY" constant="-16" id="Rbk-fC-ImM"/>
-                                        <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="height" secondItem="NwU-vR-QW5" secondAttribute="height" multiplier="0.35" id="ovQ-FH-5Gc"/>
-                                    </constraints>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="centerY" secondItem="tPl-H3-mtP" secondAttribute="centerY" id="hBi-a1-nPV"/>
+                                    <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="height" secondItem="tPl-H3-mtP" secondAttribute="height" multiplier="0.35" id="hYM-QS-8y5"/>
+                                    <constraint firstItem="Rjs-Mv-EzZ" firstAttribute="centerX" secondItem="tPl-H3-mtP" secondAttribute="centerX" id="vAd-MQ-SDa"/>
+                                </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
                         </subviews>
